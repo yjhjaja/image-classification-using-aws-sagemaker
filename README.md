@@ -9,7 +9,7 @@ Enter AWS and open SageMaker Studio.
 The provided dataset is the [dogbreed classification dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).
 
 ### Access
-Upload the data to an S3 bucket through the AWS Gateway so that SageMaker has access to the data. 
+Upload the data to an S3 bucket so that SageMaker has access to the data. 
 
 ## Hyperparameter Tuning
 For the pretrained model, I chose the ResNet-50 architecture, simply because it is popular and seems mature. I also added two fully-connected layers (with ReLU in between) so that the pretrained model can be trained further and well adapted to my classification task, i.e., the output must have a dimension of 133.
