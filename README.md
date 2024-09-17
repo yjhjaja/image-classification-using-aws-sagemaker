@@ -23,7 +23,7 @@ Below is a screenshot showing the training job (the first one in the list) was d
 ## Debugging and Profiling
 To perform model debugging and profiling in Sagemaker, below are some important steps 
 
-1. Set the debugging and profiling rules that I care about and against which I want to check to make sure my model is fine
+1. Set the debugging and profiling rules that I care about and against which I want to check to make sure the model is fine
 2. Set configurations for the debugging and profiling (using the DebuggerHookConfig() and ProfilerConfig() functions from the sagemaker.debugger module respectively)
 3. Retrive the best set of hyperparameters from the hyperparameter tuning
 4. Modify the code (hpo.py) used in the hyperparameter tuning so that the new code (train_model.py) is able to track the important variables that I want the debugging and profiling to track. The steps are avaiable in the eighth concept in the lesson "Deploy Deep Learning Models on SageMaker" in the course "Introduction to Deep Learning Topics within Computer Vision and NLP" of the nanodegree.
