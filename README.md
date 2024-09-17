@@ -32,7 +32,7 @@ To perform model debugging and profiling in Sagemaker, below are some important 
 7. The profiler report is auto-generated in S3 which I can retrieve and display
 
 ### Results
-The debugging output looks fine. The training loss declines steadily while the testing loss keeps steady. Looking at the profiler report, no rule checked, so it is good news. The training job took about 20 minutes. The report does provide recommendations to prevent each rule from checking, which I can follow further to improve the code.
+The debugging output looks fine. The train loss declines steadily while the test loss keeps steady. Looking at the profiler report, no rule checked, so it is good news. The training job took about 20 minutes. The report does provide recommendations to prevent each rule from checking, which I can follow further to improve the code.
 
 ## Model Deployment
 The model was deployed with an instance count of 1 and an instance type of ml.m5.large. It is simply the model with the best set of hyperparameters from the hyperparameter tuning. The deployment was done with the help of an auxiliary script (inference.py) provided by Udaicty. It receives the deployed model and the user-provided input to return a prediction of the dog breed.
