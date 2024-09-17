@@ -6,7 +6,7 @@ Use AWS Sagemaker to train a pretrained model that can perform image classificat
 Enter AWS and open SageMaker Studio. 
 
 ## Dataset
-The provided dataset is the dogbreed classification dataset which can be found in the classroom.
+The provided dataset is the [dogbreed classification dataset]{https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip}.
 
 ### Access
 Upload the data to an S3 bucket through the AWS Gateway so that SageMaker has access to the data. 
