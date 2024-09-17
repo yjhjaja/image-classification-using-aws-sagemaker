@@ -26,7 +26,7 @@ To perform model debugging and profiling in Sagemaker, below are some important 
 1. Set the debugging and profiling rules that I care about and against which I want to check to make sure the model is fine
 2. Set configurations for the debugging and profiling (using the DebuggerHookConfig() and ProfilerConfig() functions from the sagemaker.debugger module respectively)
 3. Retrive the best set of hyperparameters from the hyperparameter tuning
-4. Modify the code (hpo.py) used in the hyperparameter tuning so that the new code (train_model.py) is able to track the important variables that I want the debugging and profiling to track.
+4. Modify the code (hpo.py) used in the hyperparameter tuning so that the new code (train_model.py) is able to track the important variables that I want the debugging and profiling to track
 5. Create a new estimator and fit it using all above
 6. I can use load the saved data in a SageMaker Debugger trial and do an analysis on the data such as ploting a debugging output.
 7. The profiler report was auto-generated in S3. I can retrieve and display it.
