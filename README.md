@@ -12,7 +12,7 @@ The provided dataset is the [dogbreed classification dataset](https://s3-us-west
 Upload the data to an S3 bucket so that SageMaker has access to the data. 
 
 ## Hyperparameter Tuning
-For the pretrained model, I chose the ResNet-50 architecture, simply because it is popular and seems mature. I also added two fully-connected layers (with ReLU in between) so that the pretrained model can be trained further and well adapted to my classification task, i.e., the output must have a dimension of 133.
+For the pretrained model, I chose the ResNet-50 architecture. I also added two fully-connected layers (with ReLU in between) so that the pretrained model can be trained further and well adapted to my classification task, i.e., the output must have a dimension of 133.
 
 I tuned two hyperparameters. One is the batch size at the training, validation and testing stages. In the hyperparameter tuning, its range is a set of five number: {32, 64, 128, 256, 512}. The best hyperprameter found is 32. The second hyperparameter is the learning rate. In the hyperparameter tuning, its range is an interval: (0.001, 0.1). The best hyperprameter found is 0.0010770764232585321.
 
