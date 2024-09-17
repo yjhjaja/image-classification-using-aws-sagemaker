@@ -37,7 +37,7 @@ The debugging output looks fine. The train loss declines steadily while the test
 ## Model Deployment
 The model was deployed with an instance count of 1 and an instance type of ml.m5.large. It is the model with the best set of hyperparameters from the hyperparameter tuning. The deployment was done with the help of an auxiliary script (inference.py). It receives the deployed model and the user-provided input to return a prediction of the dog breed.
 
-To query the endpoint with a sample input, I need to convert the image to the bytes type and run the code below, where img_bytes is the bytes format image. The "predictor" can be recreated as long as I know the endpoint name. The code will return the index of the breed the dog belongs to.
+To query the endpoint with a sample input, convert the image to the bytes type and run the code below, where img_bytes is the bytes format image. The "predictor" can be recreated as long as I know the endpoint name. The code will return the index of the breed the dog belongs to.
 
 ```
 response = predictor.predict(img_bytes, initial_args = {"ContentType": "image/jpeg"})
