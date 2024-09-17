@@ -14,11 +14,11 @@ Upload the data to an S3 bucket so that SageMaker has access to the data.
 ## Hyperparameter Tuning
 For the pretrained model, I chose the ResNet-50 architecture. I also added two fully-connected layers (with ReLU in between) so that the pretrained model can be trained further and well adapted to my classification task, i.e., the output must have a dimension of 133.
 
-I tuned two hyperparameters. One is the batch size at the training, validation and testing stages. In the hyperparameter tuning, its range is a set of five number: {32, 64, 128, 256, 512}. The best hyperprameter found is 32. The second hyperparameter is the learning rate. In the hyperparameter tuning, its range is an interval: (0.001, 0.1). The best hyperprameter found is 0.0010770764232585321.
+I tuned two hyperparameters. One is the batch size at the train, validation and test stages. In the hyperparameter tuning, its range is a set of five number: {32, 64, 128, 256, 512}. The best hyperprameter found is 32. The second hyperparameter is the learning rate. In the hyperparameter tuning, its range is an interval: (0.001, 0.1). The best hyperprameter found is 0.0010770764232585321.
 
 Below is a screenshot showing the training job (the first one in the list) was done.
 
-![image](screenshots/training_job.png)
+![image](screenshots/training_job.PNG)
 
 ## Debugging and Profiling
 To perform model debugging and profiling in Sagemaker, below are some important steps 
